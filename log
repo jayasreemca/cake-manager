@@ -1,0 +1,26 @@
+Cake Manager:
+
+1. Using Spring Initializer created teh spring application : https://start.spring.io/
+2. Created Controller, Service, Repository, Domain classes and packages.
+3. Added code for Domain classes Cake.
+4. Created Controller methods for Get And post requests.
+    Get Method : curl -X GET \
+                   http://localhost:8080/cakes/list \
+                   -H 'cache-control: no-cache' \
+                   -H 'postman-token: 50a08491-5fe4-db7a-de54-d4c547a4205e'
+
+    Post Method : curl -X POST \
+                    http://localhost:8080/cakes \
+                    -H 'cache-control: no-cache' \
+                    -H 'content-type: application/json' \
+                    -H 'postman-token: 1b56a1a8-0ced-5bf6-81b6-4b8cb665f8f2' \
+                    -d '{
+                          "title": "victoria sponge11",
+                          "desc": "sponge with jam11",
+                          "image": "http://www.bbcgoodfood.com/sites/bbcgoodfood.com/files/recipe_images/recipe-image-legacy-id--1001468_1011.jpg"
+                      }'
+
+5. Created Test cases for testing the Media Type and Status.
+    1. whenPostHttpRequesttoCakes_thenStatusOK
+    2. whenGetHttpRequesttoCakes_thenStatusOK
+6. Pushed all code to Github URL : https://github.com/jayasreemca/cake-manager.git

@@ -35,7 +35,7 @@ To run a server locally execute the following command:
 
 and access the following URL:
 
-`http://localhost:8282/`
+`http://localhost:8080/`
 
 Feel free to change how the project is run, but clear instructions must be given in README
 You can use any IDE you like, so long as the project can build and run with Maven or Gradle.
